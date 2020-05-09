@@ -1,33 +1,33 @@
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 import ButtonRetan from './ButtonRetan';
-const RowButton = () => {
+const RowButton = (props) => {
     return (
         <View style = {styles.row}>
             <ButtonRetan
-                color = "red"
-                borWidth = "0"
-                text = ""
+                color = {'red'}
+                bW = {'0'}
+                text = {''}
             ></ButtonRetan>
             <ButtonRetan
-                color = "green"
-                borWidth = "0"
-                text = ""
+                color = {'green'}
+                bW = {'0'}
+                text = {''}
             ></ButtonRetan>
             <ButtonRetan
-                color = "blue"
-                borWidth = "0"
-                text = ""
+                color = {'blue'}
+                bW = {'0'}
+                text = {''}
             ></ButtonRetan>
             <ButtonRetan
-                color = "white"
-                borWidth = "2"
-                text = "Undo"
+                color = {'white'}
+                bW = {'2'}
+                text = {'Undo'}
             ></ButtonRetan>
             <ButtonRetan
-                color = "white"
-                borWidth = "2"
-                text = "Redo"
+                color = {'white'}
+                bW = {'2'}
+                text = {'Redo'}
             ></ButtonRetan>
         </View>
     )
@@ -38,6 +38,8 @@ export default RowButton
 const styles = StyleSheet.create({
     row:{
         flexDirection: 'row',
+        // backgroundColor: 'yellow',
+
     },
 })
 
