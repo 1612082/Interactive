@@ -2,17 +2,13 @@ import React from 'react'
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native'
 
 const ButtonRetan = (props) => {
-    const changeColor = () => {
-        if (props.color === red) {
-            
-        }
-    }
     return (
         <View>
             <TouchableOpacity 
             style = {[styles.button, {backgroundColor: props.color, borderWidth: props.bW}]}
             onPress = {() => {
-                this.changeColor
+               props.onClick()
+               
             }}
             >
                 <Text>{props.text}</Text>
